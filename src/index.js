@@ -1,11 +1,20 @@
 "use strict";
 
+import lodash from "lodash";
+import "./style.css";
+import Component from "./Component";
 
-import lodash from 'lodash';
-import './style.css'
-import Component from './Component';
-const resultOfSummaTwoNumbers = 5 + 2;
+import {pow} from "./math";
+
+
+console.time();
+console.log(pow(456,45));
+console.timeEnd();
+
+console.time();
+console.log(pow(745,33));
+console.timeEnd();
+
 console.log(lodash.random());
-console.log(resultOfSummaTwoNumbers);
 const comp = new Component();
-comp.render();
+
